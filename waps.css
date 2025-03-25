@@ -1979,7 +1979,8 @@ tbody img {
 
 .solutions-title-2 {
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: -50px;
+    font-size: 20px;
 }
 
 
@@ -1990,19 +1991,29 @@ tbody img {
     align-items: center;
     padding: 50px;
     gap: 40px;
-    max-width: 1500px;
+    /* width: 90%; */
+    max-width: 1200px;
     margin: auto;
 }
 
 
 .solutions-text {
-    width: 50%;
+    width: 80%;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); */
-    text-align: left;
+    /* text-align: left; */
 }
+
+
+.solutions-text h4 {
+    font-size: 20px;
+    margin-top: 50px;
+    justify-self: center;
+}
+
+
 
 /* .solutions-text h1 {
     display: block;
@@ -2023,15 +2034,15 @@ tbody img {
     font-size: 18px;
     color: #54595F;
     line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: left;
+    margin-bottom: -60px;
+    text-align: justify;
 }
 
 
 .solutions-container img{
-    width: 700px;
-    height: 700px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    /* height: 700px; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 }
 
 
@@ -2042,14 +2053,33 @@ tbody img {
     margin-top: -100px;
     text-decoration: none;
     color: #551A8B;
-    
-    
-    
-    
-    
-    
+ 
 }
 
+
+
+/* .dth-offer img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: -30px;
+}
+
+
+.dth-offer h3 {
+    text-align: center;
+    font-size: 30px;
+
+} 
+
+
+.dth-offer p {
+    color: #54595F;
+    justify-self: center;
+    margin-top: 30px;
+    font-size: 18px;
+} */
 
 
 .solutions-2 {
@@ -2069,7 +2099,6 @@ tbody img {
     width: 300px;
     text-align: justify;
     margin: 0 auto;
-    
     /* background-color: #ffffff; */
     
 }
@@ -2091,7 +2120,12 @@ tbody img {
 
 
 
-
+.couple-tv {
+    width: 70%;
+    display: flex;
+    justify-self: center;
+    margin-top: 70px;
+}
 
 
 
@@ -2105,7 +2139,7 @@ tbody img {
 
 
 .ins-sat-image {
-    background-image: url(Images/satellite-1.jpg);
+    background-image: url(Images/Multi-Orbit.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
@@ -2172,7 +2206,7 @@ tbody img {
 
 
  .ins-dropdown {
-    width: 500px;
+    width: 50%;
     margin: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
