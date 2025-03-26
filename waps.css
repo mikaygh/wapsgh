@@ -371,7 +371,7 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .reach h2 {
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-size: 40px;
     
@@ -382,7 +382,7 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .reach-text {
     color: #2B2B2B;
     text-align: justify;
-    width: 40%;
+    width: 50%;
     /* max-width: 500px; */
     font-size: 18px;
     line-height: 1.5;
@@ -416,7 +416,7 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 }
 
 .reach-container img {
-    width: 40%;
+    width: 50%;
     /* max-height: 600px; */
     height:auto;
     /* margin-right: 150px; */
