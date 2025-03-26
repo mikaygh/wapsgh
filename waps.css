@@ -24,10 +24,22 @@ body {
     width: 100%;
     /* background-color: rgb(241, 241, 241); */
     background-color: #ffffff;
+    overflow-x: hidden;
    
 }
 
+html {
+    overflow-x: hidden;
+}
 
+
+/* @media screen and (min-resolution: 150dpi) { */
+    /* Adjustments for 150% zoom */
+    /* body {
+        font-size: 1.2rem;
+    } */
+    /* Other specific adjustments */
+/* } */
 
 /*--------------NAVIGATION--------------*/
 
@@ -293,18 +305,26 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
     background-color: white;
     /* position: relative; */
     display: flex;
+    flex-direction: column;
+    padding: 20px;
     justify-content: center; 
     align-items: center; 
     gap: 50px; 
     margin-bottom: 50px;
+    
 }
 
+.services img {
+    max-width: 50%; 
+    height: auto; 
+}
 
 .dth-header {
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: -70px;
+    width: 100%;
 }
 
 
@@ -323,16 +343,14 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .dth-solution p {
     color: #54595F;
     text-align: justify;
-    width: 80%;
+    width: 50%;
     font-size: 20px;
     margin: 0 auto; 
     line-height: 1.5;
+   
 }
 
-.services img {
-    max-width: 1200px; 
-    height: auto; 
-}
+
 
 
 
@@ -343,27 +361,20 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
     background-color: #F7941D;
     justify-content: center;
     align-items: center; 
-    height: 900px;
-    gap: 50px; 
+    height: auto;
+    padding-bottom: 30px;
+    /* max-height: 1000px; */
+    /* gap: 50px;  */
     
 }
 
 
 .reach h2 {
     margin: 0 auto;
-
-    width: 100%;
+    width: 40%;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     
-}
-
-
-.reach img {
-    height:600px;
-    margin-left: 80px;
-    /* border-radius: 10px; */
-    /* box-shadow: rgba(0, 0, 0, 0.9); */
 }
 
 
@@ -371,12 +382,19 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .reach-text {
     color: #2B2B2B;
     text-align: justify;
-    width: 700px;
+    width: 40%;
+    /* max-width: 500px; */
     font-size: 18px;
     line-height: 1.5;
     margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    /* margin-left: -10px; */
     
 }
+
+
+
 
 
 .reach-text a:hover {
@@ -386,10 +404,24 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 
 
+
+
 .reach-container {
     display: flex;
-    margin-top: 50px;
-    
+    flex-direction: column;
+    /* margin-top: 10px; */
+    /* margin: 0 auto; */
+    width: 100%;
+    align-items: center;
+}
+
+.reach-container img {
+    width: 40%;
+    /* max-height: 600px; */
+    height:auto;
+    /* margin-right: 150px; */
+    /* border-radius: 10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.9); */
 }
 
 
@@ -404,6 +436,7 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .reach a {
     text-decoration: none;
+    
 }
 
 
@@ -446,9 +479,12 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .why-waps-container {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     gap: 30px;
     margin-top: -20px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
     
   
 }
@@ -456,8 +492,9 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .wide-reach {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
     background: white;
     margin-top: 50px;
     display: flex;
@@ -467,8 +504,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .flip-card {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     transform-style: preserve-3d;
     transition: all 0.7s ease;
     background: white;
@@ -485,8 +522,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .front {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     backface-visibility: hidden;
     background: white;
     color: #2B2B2B;
@@ -502,8 +539,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .front-front-overlay {
     position: absolute;
     background: #2B2B2B;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
@@ -577,8 +614,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .front {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     backface-visibility: hidden;
     background: white;
     color: grey;
@@ -596,8 +633,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .front-front-overlay {
     position: absolute;
     background: #2B2B2B;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -632,7 +669,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
     position: absolute;
     color: #2B2B2B;
     text-align: justify;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 30px;
     /* bottom: 50%;
     margin: 0 auto; */
     
@@ -652,8 +690,9 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .expertise {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
     background: white;
     margin-top: 50px;
     display: flex;
@@ -680,8 +719,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .expertise-front {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     backface-visibility: hidden;
     background: white;
     color: grey;
@@ -699,8 +738,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .expertise-front-overlay {
     position: absolute;
     background: #2B2B2B;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -738,7 +777,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
     position: absolute;
     color: #2B2B2B;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 30px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -760,8 +800,9 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .Experience {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
     background: white;
     margin-top: 50px;
     /* display: flex;
@@ -789,8 +830,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 
 .Experience-front {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     backface-visibility: hidden;
     background: white;
     color: #2B2B2B;
@@ -807,8 +848,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .Experience-front-overlay {
     position: absolute;
     background: #2B2B2B;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
@@ -846,7 +887,8 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
     position: absolute;
     color: #2B2B2B;
     text-align: justify;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 30px;
     margin: 0 auto;
     width: 400px;
     
@@ -860,13 +902,14 @@ animation: breathe 3s ease-in-out infinite;  /*---breathe key frames at Contact 
 .info {
     text-align: center;
     background-color: #F7941D;
-    width: 1560px;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
     margin-top: 40px;
     bottom: 50%;
     align-items: center;
     align-content: center;
+    padding-bottom: 20px;
     /* border-radius: 10px; */
 }
 
