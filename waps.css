@@ -280,6 +280,7 @@ html {
     width: 100%;
     height: 700px;
     object-fit: cover;
+    /* background-size: contain; */
     min-width: 100%;
     box-sizing: border-box;
 }
@@ -435,7 +436,7 @@ html {
 }
 
 .reach-container img {
-    width: 100%;
+    width: 70%;
     /* max-height: 600px; */
     height: auto;
     /* margin-right: 150px; */
@@ -1166,12 +1167,12 @@ p {
 
 
 .ctu-sat-image {
-    background-image: url(Images/Multi-Orbit.jpg);
+    background-image: url(Images/man-looks-screen-with-words-no-it.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1181,16 +1182,17 @@ p {
 .ctu-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     align-content: center;
+    width: 100%;
 }
 
 
 .ctu-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     /* padding-top: 100px */
 
@@ -1200,7 +1202,7 @@ p {
 .ctu-overlay p {
     position: relative;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     /* padding-top: 20px; */
     /* background-color: #7A275F; */
@@ -1210,6 +1212,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
+    width: 40%;
 
 }
 
@@ -1430,7 +1433,7 @@ p {
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1440,16 +1443,17 @@ p {
 .cov-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
     align-content: center;
+    width: 100%;
 }
 
 
 .cov-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     /* padding-top: 100px */
 
@@ -1459,7 +1463,7 @@ p {
 .cov-overlay p {
     position: relative;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     /* padding-top: 20px; */
     /* background-color: #7A275F; */
@@ -1469,7 +1473,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
-    width: 70%;
+    width: 40%;
 
 }
 
@@ -1581,12 +1585,12 @@ p {
 
 
 .abtu-sat-image {
-    background-image: url(Images/Multi-Orbit.jpg);
+    background-image: url(Images/excited-young-black-couple-with-remote-control-sitting-couch-watching-tv-against-blue-studio.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center;
-    height: 300px;
+    background-position: center calc(20% - 40px);
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1596,16 +1600,17 @@ p {
 .abtu-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
     align-content: center;
+    width: 100%;
 }
 
 
 .abtu-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     /* padding-top: 100px */
 
@@ -1615,7 +1620,7 @@ p {
 .abtu-overlay p {
     position: relative;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     /* padding-top: 20px; */
     /* background-color: #7A275F; */
@@ -1625,6 +1630,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
+    width: 40%;
 
 }
 
@@ -1815,12 +1821,12 @@ p {
 
 
 .tvlist-sat-image {
-    background-image: url(Images/Multi-Orbit.jpg);
+    background-image: url(Images/children-holding-remote-while-lying-floor.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center;
-    height: 300px;
+    background-position: center calc(30% - 50px);
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -1830,16 +1836,17 @@ p {
 .tvlist-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
     align-content: center;
+    width: 100%;
 }
 
 
 .tvlist-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     /* padding-top: 100px */
 
@@ -1849,7 +1856,7 @@ p {
 .tvlist-overlay p {
     position: relative;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     /* padding-top: 20px; */
     /* background-color: #7A275F; */
@@ -1859,6 +1866,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
+    width: 40%;
 
 }
 
@@ -1924,7 +1932,7 @@ p {
 
 
 
-/*-------------- Channel List --------------*/
+/*-------------- Channel  List --------------*/
 
 /* .channel-list-maincontainer {
     background-color: #F7941D;
@@ -2108,12 +2116,13 @@ tbody img {
 /*-------------- SOLUTIONS --------------*/
 
 
-/* .sol-sat-image {
-    background-image: url(Images/Multi-Orbit.jpg);
+.sol-sat-image {
+    background-image: url(Images/full-length-man-using-mobile-phone.jpg);
     position: relative;
     background-size: cover;
-    background-position: center;
-    height: 300px;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -2123,19 +2132,30 @@ tbody img {
 .sol-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     align-content: center;
+    width: 100%;
 }
 
 
 .sol-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
  
- } */
+ }
+
+ .sol-overlay p {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    justify-self: center;
+ 
+ }
 
 
 .solutions-title {
@@ -2306,12 +2326,12 @@ tbody img {
 
 
 .ins-sat-image {
-    background-image: url(Images/Multi-Orbit.jpg);
+    background-image: url(Images/Professional-installer.png);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 600px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -2322,16 +2342,48 @@ tbody img {
 .ins-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 300px;
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.5);
     align-content: center;
+    width: 100%;
 }
+
+.ins-overlay button{
+    display: flex;
+    font-size: 18px;
+    justify-self: center;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    background-color: #f7941d;
+    border: none;
+    border-radius: 20px;
+    padding-left: 40px;
+    color: #2B2B2B;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.ins-overlay button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.ins-overlay a{
+    text-decoration: none;
+}
+
+
 
 
 .ins-overlay h1 {
     position: relative;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     /* padding-top: 100px */
 
@@ -2351,7 +2403,7 @@ tbody img {
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
-    width: 70%;
+    width: 40%;
 
 }
 
