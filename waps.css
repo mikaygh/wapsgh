@@ -3921,6 +3921,12 @@ tbody img {
         
     }
 
+    .reach-text a
+     {
+        text-decoration: none;
+        
+    }
+
 
     .reach-action  {
         background-color: #7A275F;
