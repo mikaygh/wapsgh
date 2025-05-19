@@ -3247,6 +3247,7 @@ tbody img {
         /* margin: 0 auto !important; */
         text-align: center;
         width: 80%;
+        text-align: center !important;
     }
     
     
