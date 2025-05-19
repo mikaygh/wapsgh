@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="mobile-nav.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,38 @@
     </nav>
 
 
+    <div class="mobile-nav">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="waps-logo-mobile" src="Images/WAPS-logo-1.png" alt="Logo"></a>  
+            </div>
+            <!-- <div class="COP-title"> <a href="index.html">THE CHURCH OF PENTECOST <br> <span class="COP-title-2">ASOFAN ENGLISH ASSEMBLY</span></a>   </div> -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li class="nav-media" onclick="toggleMediaDropdown()">
+                    Our Coverage <span class="dropdown-icon">&#11206</span>
+                    <ul class="media-dropdown" id="mediaDropdown">
+                        <li><a href="Channel-list.html">Channels</a></li>
+                        <li><a href="our-coverage.html">Footprint</a></li>
+                    </ul>
+                </li>
+                <li> <a href="installers.html">Installers</a></li> 
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    
+    </div>
+
+
+
     <div class="tvlist-sat-image">
         <div class="tvlist-overlay">
             <h1>Channels</h1>
@@ -55,7 +88,7 @@
         <div class="tv-list">
 
             <h2 class="tvlist-title"> <span class="tv-icon">&#128250</span>TV Channels</h2>
-            <p>The Channel List below provides the lineup of available TV channels on our platform.</p>
+            <p class="tvlist-into">The Channel List below provides the lineup of available TV channels on our platform.</p>
 
 
             <div class="scroll-text">
@@ -64,7 +97,7 @@
                     <p>ABC TV - Frequency: 12525 MHz V, 30000 KSps... XYZ TV - Frequency: 12525 MHz V, 30000 KSps... 123
                         TV - Frequency: 12525 MHz V, 30000 KSps</p>
                 </div>
-            </div>
+           </div>
 
 
             <!-- 
@@ -288,10 +321,6 @@
                                 <td>Joy News</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>GT1</td>
-                            </tr>
-                            <tr>
                                 <td><img src="Images/logos/fire-tv-gh.png"></td>
                                 <td>Fire TV</td>
                             </tr>
@@ -319,12 +348,20 @@
                                 <td><img src="Images/logos/tvt-tg.png"></td>
                                 <td>TVT</td>
                             </tr>
+                             <tr>
+                                <td><img src="Images/logos/Potters-City-TV.jpg" alt=""></td>
+                                <td>Potters TV</td>
+                            </tr>
                             <tr>
                                 <td><img src="Images/logos/woezor-tv-gh.png"></td>
                                 <td>Woezor TV</td>
                             </tr>
+                             <tr>
+                                <td><img src="Images/logos/MOE-TV.jpg" alt=""></td>
+                                <td>MOE TV</td>
+                            </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/AG-TV.jpg"></td>
                                 <td>AG TV</td>
                             </tr>
                             <tr>
@@ -343,10 +380,10 @@
                                 <td><img src="Images/logos/onua-tv-gh.png" alt=""></td>
                                 <td>Onua TV</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td></td>
                                 <td>Zaa TV</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <td><img src="Images/logos/precious_tv_gh.png"></td>
                                 <td>Precious TV</td>
@@ -437,7 +474,7 @@
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/channel-one-tv-gh.png"></td>
-                                <td>Channel One TV HD</td>
+                                <td>Channel One TV</td>
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/billionaires-tv-gh.png"></td>
@@ -452,7 +489,7 @@
                                 <td>WAPS_info</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/loud-silence-tv-us.png" alt=""></td>
                                 <td>Loud Silence TV</td>
                             </tr>
                             <tr>
@@ -492,7 +529,7 @@
                                 <td>Happiness TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/sharp-tv.png" alt=""></td>
                                 <td>Sharp TV</td>
                             </tr>
                             <tr>
@@ -586,8 +623,8 @@
                                 <td>UTV</td>
                             </tr>
                             <tr>
-                                <td><img src="Images/logos/maranatha-tv-gh.png"></td>
-                                <td>Maranatha TV</td>
+                                <td><img src="Images/logos/MBN-TV.png"></td>
+                                <td>MBN TV</td>
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/Hennes-tv.png" alt=""></td>
@@ -601,6 +638,14 @@
                                 <td><img src="Images/logos/nazareth-tv-gh.png"></td>
                                 <td>Nazareth TV</td>
                             </tr>
+                             <tr>
+                                <td><img src="Images/logos/fireman-tv.png"></td>
+                                <td>Fireman TV</td>
+                            </tr>
+                             <tr>
+                                <td><img src="Images/logos/eba-tv-gh.png"></td>
+                                <td>Eba TV</td>
+                             </tr>
                             <tr>
                                 <td><img src="Images/logos/hsm-tv.jpg" alt=""></td>
                                 <td>HSM TV</td>
@@ -616,6 +661,10 @@
                             <tr>
                                 <td><img src="Images/logos/love-revolution-tv-gh.png"></td>
                                 <td>Love Revolution</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/logos/mikaf-tv-gh.png"></td>
+                                <td>Mikaf TV</td>
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/miracle-tv.png"></td>
@@ -635,7 +684,7 @@
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/ororo-tv.jpg"></td>
-                                <td>Ororo</td>
+                                <td>Ororo TV</td>
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/boc-tv-gh.png"></td>
@@ -665,6 +714,18 @@
                                 <td></td>
                                 <td>Papabi TV</td>
                             </tr>
+                             <tr>
+                                <td><img src="Images/logos/victory-tv-gh.png"></td>
+                                <td>Victory TV</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Happy TV</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/logos/ph-one-tv-gh.png"></td>
+                                <td>PH-One TV</td>
+                            </tr>
                             <tr>
                                 <td><img src="Images/logos/megyefo-tv-gh.png"></td>
                                 <td>MEGYEFO TV</td>
@@ -674,24 +735,16 @@
                                 <td>Great Commission TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/servant-tv-gh.png"></td>
                                 <td>Servant TV</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td>-</td>
+                             <tr>
+                                <td><img src="Images/logos/Hill-TV.jpg" alt=""></td>
+                                <td>Hill TV</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>-</td>
+                             <tr>
+                                <td><img src="Images/logos/bless-tv.png"></td>
+                                <td>Bless TV</td>
                             </tr>
                         </tbody>
                     </table>
@@ -712,7 +765,7 @@
                                 <td>Mother TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/grace-tv-gh.png"></td>
                                 <td>Grace TV</td>
                             </tr>
                             <tr>
@@ -724,11 +777,11 @@
                                 <td>Omanba TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/kuma-plus-tv.png"></td>
                                 <td>Kumaplus TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/home-tv-gh.png"></td>
                                 <td>Home TV</td>
                             </tr>
                             <tr>
@@ -736,7 +789,7 @@
                                 <td>Hope TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/fast-tv-gh.png" alt=""></td>
                                 <td>Fast TV</td>
                             </tr>
                             <tr>
@@ -764,7 +817,7 @@
                                 <td>Sporty TV HD</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/thm-tv-gh.png"></td>
                                 <td>THM TV</td>
                             </tr>
                             <tr>
@@ -772,15 +825,15 @@
                                 <td>Joy Learning TV</td>
                             </tr>
                             <tr>
-                                <td><img src="Images/logos/akyedie-tv-gh.png"></td>
-                                <td>Akyedie TV</td>
+                                <td></td>
+                                <td>Zion TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/dove-tv-gh.png"></td>
                                 <td>Dove TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/holy-tv-gh.png"></td>
                                 <td>Holy TV</td>
                             </tr>
                             <tr>
@@ -788,12 +841,16 @@
                                 <td>SBN International</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>Tac TV</td>
+                                <td><img src="Images/logos/tac-tv-gh.png"></td>
+                                <td>TAC TV</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/sompa-tv-gh.png"></td>
                                 <td>Sompa TV</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/logos/aseda-tv-gh.png" alt=""></td>
+                                <td>Aseda TV</td>
                             </tr>
                             <tr>
                                 <td><img src="Images/logos/ezra-tv-gh.png"></td>
@@ -822,6 +879,10 @@
                             <tr>
                                 <td><img src="Images/logos/genesis-tv-gh.png"></td>
                                 <td>Genesis TV</td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/logos/dinpa-tv-gh.png"></td>
+                                <td>Dinpa TV</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1061,10 +1122,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td><img src="Images/logos/sompa-fm-gh.png"></td>
                                 <td>Sompa FM</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>-</td>
                             </tr>
                             <tr>
@@ -1117,7 +1178,7 @@
                             </tr>
                             <tr>
                                 <td>-</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -1165,9 +1226,10 @@
                         </a></li>
                     <li><a href="https://maps.app.goo.gl/bA2Thr3s3ZPwzoLe7"
                             target="_blank"><img src="Images/location-outline.svg" alt="Location">
-                            <p>Location</p><span class="location-"> 12 Silicon house, Roman Ridge Accra, Ghana</span>
+                            <p>Location</p><span class="location-"> 12 Silicon house, <br> Roman Ridge Accra, Ghana</span>
                         </a></li>
                 </ul>
+            
 
                 <!-- <div>
     <p class="follow-us">Follow us on social media </p>
@@ -1179,8 +1241,8 @@
     </ul>
 </div> -->
 
-                <p style="color: rgb(128, 128, 128)" class="copy-right"> © 2025 wapsgh. All Rights Reserved.</p>
-
+<p style="color: rgb(128, 128, 128)" class="copy-right"> © 2025 wapsgh. All Rights Reserved.</p>
+</footer>
 </body>
 
 </html>
