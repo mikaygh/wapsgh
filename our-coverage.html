@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="waps.css">
     <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <script src="mobile-nav.js"></script>
 </head>
 <body>
 
@@ -34,6 +35,39 @@
     
     </nav>
         
+
+    <div class="mobile-nav">
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img class="waps-logo-mobile" src="Images/WAPS-logo-1.png" alt="Logo"></a>  
+            </div>
+            <!-- <div class="COP-title"> <a href="index.html">THE CHURCH OF PENTECOST <br> <span class="COP-title-2">ASOFAN ENGLISH ASSEMBLY</span></a>   </div> -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li class="nav-media" onclick="toggleMediaDropdown()">
+                    Our Coverage <span class="dropdown-icon">&#11206</span>
+                    <ul class="media-dropdown" id="mediaDropdown">
+                        <li><a href="Channel-list.html">Channels</a></li>
+                        <li><a href="our-coverage.html">Footprint</a></li>
+                    </ul>
+                </li>
+                <li> <a href="installers.html">Installers</a></li> 
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    
+    </div>
+
+
+
             
 <div class="cov-sat-image">
     <div class="cov-overlay">
@@ -97,7 +131,7 @@
 <ul class="contact">
     <li><a href="tel:+233241334664">  <img src="Images/call-outline.svg" alt="Call"> <p>Call us</p> <span class="Phone-number">+233-24-1334664</span> </a></li>
     <li><a href="mailto:info@wapsgh.com"> <img src="Images/mail-outline.svg" alt="Email"> <p>Email</p>   <span class="Email-">info@wapsgh.com</span></a></li>
-    <li><a href="https://maps.app.goo.gl/bA2Thr3s3ZPwzoLe7" target="_blank"><img src="Images/location-outline.svg" alt="Location"> <p>Location</p><span class="location-"> 12 Silicon house, Roman Ridge Accra, Ghana</span> </a></li>
+    <li><a href="https://maps.app.goo.gl/bA2Thr3s3ZPwzoLe7" target="_blank"><img src="Images/location-outline.svg" alt="Location"> <p>Location</p><span class="location-"> 12 Silicon house, <br> Roman Ridge Accra, Ghana</span> </a></li>
 </ul>
 
 <!-- <div>
