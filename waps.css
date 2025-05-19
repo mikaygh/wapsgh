@@ -45,14 +45,15 @@ html {
 
 
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     justify-content: center;
     align-items: center;
     gap: 100px;
     height: 100px;
-}
+    position: fixed;
+} */
 
 .nav-buttons a {
     text-decoration: none;
@@ -113,9 +114,10 @@ html {
     gap: 30px;
     padding: 20px;
     color: #2B2B2B;
-    /* font-weight: 500; */
+    /* font-weight: bold; */
     font-size: 18px;
     position: relative;
+
 }
 
 
@@ -177,6 +179,164 @@ html {
 
 }
 
+
+
+/* --------------Desktop Navbar-------------- */
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    /* margin-bottom: 20px; */
+    z-index: 1000;
+    position: fixed;
+}
+
+
+
+/* --------------Mobile Navbar-------------- */
+
+ /* ------- Hamburger Menu ------ */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #2B2B2B;
+        margin: 4px 0;
+}
+
+
+    .mobile-nav {
+    display: none; /* ------ Hide Mobile Navbar on Desktop ------*/
+}
+
+
+@media screen and (max-width: 1180px) {
+    .mobile-nav {
+        display: block; /* ------ Show Mobile Navbar on Mobile ------ */
+        margin-bottom: 80px;
+        
+    }
+    .nav-bar {
+        display: none; /* Hide Desktop Navbar on Mobile */
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 2000;
+    }
+    
+    .logo img {
+        height: 40px;
+        align-self: center;
+        margin-top: 10px;
+    }
+    
+   
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    
+   
+    
+    .nav-media {
+        color: #ffffff;
+    }
+    
+    
+    .dropdown-icon {
+        font-size: 16px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+   
+    .media-dropdown {
+        list-style: none;
+        background-color: #54595F;
+        overflow: hidden;
+        max-height: 0;
+        padding: 0;
+        /* width: 60%; */
+        margin-top: 5px;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+      }
+      
+      /* When shown */
+      .media-dropdown.show {
+        max-height: 100px; /* Adjust depending on how many submenu items */
+        /* padding: 10px 0; */
+        padding-left: 10px;
+      }
+    
+    .media-dropdown li {
+        margin: 5px 0;
+    }
+    
+    .media-dropdown a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .media-dropdown li:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background-color: #2B2B2B;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        overflow: hidden;
+        max-height: 0;
+        padding: 0 20px;
+        transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+        z-index: 1999;
+        list-style: none;
+      }
+      
+      .nav-links.active {
+        max-height: 500px; 
+        padding: 20px;
+      }
+
+      .nav-links li {
+        margin: 20px 0;
+      }
+
+    
+}
+  
+   
+
+
+    
+    
 
 
 /* ------------------ Slider ------------------ */
@@ -261,6 +421,7 @@ html {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 100px;
     
 }
 
@@ -300,7 +461,7 @@ html {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 10px;
     z-index: 3;
 }
@@ -345,6 +506,7 @@ html {
     margin-top: 50px;
     margin-bottom: -70px;
     width: 100%;
+    /* font-weight: bold; */
 }
 
 
@@ -402,7 +564,7 @@ html {
 .reach-text {
     color: #2B2B2B;
     text-align: justify;
-    width: 70%;
+    width: 60%;
     /* max-width: 500px; */
     font-size: 18px;
     line-height: 1.5;
@@ -436,7 +598,7 @@ html {
 }
 
 .reach-container img {
-    width: 70%;
+    width: 60%;
     /* max-height: 600px; */
     height: auto;
     /* margin-right: 150px; */
@@ -456,6 +618,7 @@ html {
 
 .reach a {
     text-decoration: none;
+    color: #0000ff;
 
 }
 
@@ -701,7 +864,7 @@ html {
 .back a {
 
     text-decoration: none;
-    color: #551A8B;
+    color: #0000FF;
 }
 
 .back a:hover {
@@ -1014,7 +1177,7 @@ html {
     display: flex;
     justify-content: center;
     gap: 300px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     text-align: center;
     list-style: none;
 }
@@ -1069,7 +1232,7 @@ p {
 
 .footer {
     background-color: #2B2B2B;
-    height: 300px;
+    height: 350px;
     border: 20px;
     /* border-radius: 20px; */
     align-items: center;
@@ -1420,6 +1583,235 @@ p {
 
 }
 
+ 
+
+
+
+
+
+/*--------------Responsive Contact Us--------------*/
+
+
+@media screen and (max-width: 1180px) {
+
+    .Home-ctu {
+        text-decoration: none;
+    }
+
+
+    .ctu-sat-image {
+        height: 200px;
+        margin-bottom: 50px;
+    
+    }
+
+    .ctu-overlay {
+        height: 200px;
+        width: 100%;
+    }
+
+
+    .ctu-overlay h1 {
+        font-size: 30px;
+
+    }
+
+
+    .ctu-overlay p {
+        font-size: 14px;
+        border-radius: 0px;
+        padding: 0px;
+        transition: none;
+        width: 90%;
+        line-height: 1.3;
+
+    }
+
+
+    .ctu-home:hover {
+        text-decoration: underline;
+    }
+
+
+    .ctu-hme-a {
+        text-decoration: none;
+    }
+
+
+
+    .contact-container {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .contact-container img {
+        width: 30%;
+        /* height: 100%; */
+    }
+
+     
+     
+
+    .location {
+        background-color: #F7941D;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 20px;
+        align-items: center;
+        height: 200px;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+
+
+    .location h2 {
+        color: #2B2B2B;
+
+    }
+
+
+    .location p {
+        color: #2B2B2B;
+    }
+
+
+    .map iframe {
+        display: flex;
+        width: 80%;
+        border: solid 5px;
+        border-color: #7c0e0e;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        /* height: auto; */
+        /* width: 100%;
+        height: 100%; */
+        justify-self: center;
+        /* width: 100%;
+        height: 100%; */
+
+    }
+
+
+
+    .contact-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+        /* text-align: center; */
+        list-style: none;
+        margin-top: -20px;
+        align-content: center;
+
+    }
+
+
+
+    .contact-details {
+        background-color: #2B2B2B;
+        /* height: 522px;
+        width: 695.5px; */
+        width: 30%;
+        align-content: center;
+        justify-items: center;
+        height: 400px;
+    
+    }
+
+
+
+
+    .contact-icons li img {
+        text-align: center;
+        width: 30px !important;
+    }
+
+
+
+    .contact-icons img {
+        width: 50px;
+        transition: 0.3s ease;
+    }
+
+
+    .contact-icons img:hover {
+        width: 0px;
+        transition: none;
+        transform: none;
+    }
+
+
+
+
+    .contact-icons a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .WhatsApp {
+        width: 220px;
+        /* justify-content: center; */
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: none;
+        position: fixed;
+        z-index: 9999;
+        bottom: 20px;
+        /* right: 20px; */
+        animation: breathe 3s ease-in-out infinite;
+    }
+
+
+
+
+    .WhatsApp:hover {
+        transform: none;
+        transition: none;
+    }
+
+
+    .WhatsApp a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .WhatsApp p {
+        align-self: center;
+        text-align: center;
+        padding-top: 5px;
+        margin-left: 3px;
+        font-size: 12px;
+    }
+
+
+    .WhatsApp img {
+        width: 30px;
+        margin-left: 10px;
+
+    }
+
+  .ins-text {
+        color: #54595F !important;
+
+    }
+
+
+}
+
+
+
 
 
 
@@ -1576,6 +1968,115 @@ p {
 
 
 
+
+/*--------------Responsive for Our coverage -------------*/
+
+@media screen and (max-width: 1180px) {
+    
+
+    .cov-sat-image {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    
+    .cov-overlay {
+        height: 250px;
+    }
+    
+    
+    .cov-overlay h1 {
+        font-size: 30px;
+    
+    }
+    
+    
+    .cov-overlay p {
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100%;
+        line-height: 1.3;
+    
+    }
+    
+    
+    
+    
+    .cov-home:hover {
+        text-decoration: none;
+    }
+    
+    
+    
+    .cov-text h2 {
+        font-size: 20px !important;
+    }
+    
+    .cov-text p {
+        font-size: 16px !important;
+        width: 60%;
+
+    
+    }
+    
+    
+
+    .footprint {
+        width: 80%;
+        border: solid 5px #d6d2d2;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    
+/*     
+    .view-more {
+        display: flex;
+        justify-self: center;
+        margin-top: 20px;
+    }
+    
+    .view-more button {
+        width: 200px;
+        height: 40px;
+        background-color: #F7941D;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    
+    
+    .view-more button:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    
+    
+    
+    .view-more a {
+        text-decoration: none;
+        cursor: pointer;
+    
+    }
+    
+     */
+    
+
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------ABOUT US--------------*/
 
 /* .Home-ctu {
@@ -1723,11 +2224,20 @@ p {
     padding-left: 20px;
 }
 
-.about-text a {
+.about-text a:link {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+.about-text a:visited {
     color: #551A8B;
     text-decoration: none;
 }
 
+.about-text a:active {
+    color: #FF0000;
+    text-decoration: none;
+}
 
 .about-text a:hover {
     text-decoration: underline;
@@ -1810,6 +2320,178 @@ p {
     transform: scale(1.1);
     
     
+}
+
+
+
+
+
+
+
+/*--------------Responsive About Us--------------*/
+
+@media screen and (max-width: 1180px) {
+    
+
+.abtu-sat-image {
+    height: 200px;
+    margin-bottom: 10px;
+   
+}
+
+.abtu-overlay {
+    height: 200px;
+    width: 100%;
+}
+
+
+.abtu-overlay h1 {
+    font-size: 30px;
+}
+
+
+.abtu-overlay p {
+    font-size: 14px;
+    border-radius: 0px;
+    width: 100%;
+    line-height: 1.3;
+
+}
+
+
+
+.abtu-home:hover {
+    text-decoration: none;
+}
+
+
+
+/* .abt-title {
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 40px;
+} */
+
+
+
+/* .abt-us-image  {
+   width: 500px;
+   height: 600px;
+   align-content: center;
+ } */
+
+
+
+.about-us-container {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 0px;
+
+}
+
+
+
+.about-text h2 {
+    font-size: 35px !important;
+    /* background-color: #F7941D; */
+    /* text-decoration: underline; */
+    color: #54595F;
+    margin-bottom: 15px;
+    /* border-bottom: 3px solid #F7941D; */
+    /* padding-bottom: 5px; */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 90%;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #54595F !important;
+    text-align: justify !important;
+    width: 70% !important;
+    
+}
+
+/* .values {
+    border-left: 3px solid #f7941d;
+    padding-left: 20px;
+}
+
+.about-text a {
+    color: #551A8B;
+    text-decoration: none;
+} */
+
+
+.about-text a:hover {
+    text-decoration: none;
+}
+
+
+
+.know-more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: -30px;
+    /* margin-top: 80px; */
+    height: auto;
+    
+}
+
+
+
+.solutions {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    transition: none;
+}
+
+.solutions a {
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+/* .solutions a:hover {
+    text-decoration: underline;
+} */
+
+.solutions p {
+    color: #2B2B2B;
+    text-align: center;
+
+}
+
+.solutions h2 {
+    font-size: 25px;
+    
+}
+
+
+.solutions:hover {
+    transition: none;
+    transform: none;
+    
+    
+}
+
+.rule {
+    width: 50%;
+    margin: 5px auto;
+}
+
 }
 
 
@@ -1939,12 +2621,12 @@ p {
 } */
 
 
-.channel-list body {
+/* .channel-list body {
     font-family: 'poppins', sans-serif;
     width: 100%;
     background-color: #F7941D;
 
-}
+} */
 
 
 /*--------- Scroll-text --------- */
@@ -1985,7 +2667,7 @@ p {
 }
 
 .scrolling-wrapper {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     /* Ensures text disappears behind "New Channels" */
     /* color: #F7941D; */
@@ -2072,7 +2754,7 @@ th,
 td {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #54595F;
     font-size: 16px;
     line-height: 1.5;
     /* font-weight: bold; */
@@ -2111,13 +2793,195 @@ tbody img {
 
 
 
+/*-------------- Responsive view Channel list --------------*/
+
+@media screen and (max-width: 1180px) {
+    
+.tvlist-sat-image {
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.tvlist-overlay {
+    height: 200px;
+}
+
+
+.tvlist-overlay h1 {
+    font-size: 30px;
+
+}
+
+
+.tvlist-overlay p {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.3;
+
+}
+
+
+
+.abtu-home:hover {
+    text-decoration: none;
+}
+
+
+
+
+/*-------------- Channel  List --------------*/
+
+/* .channel-list-maincontainer {
+    background-color: #F7941D;
+} */
+
+
+.channel-list body {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    background-color: #F7941D;
+
+}
+
+
+/*--------- Scroll-text --------- */
+
+.scroll-text {
+    width: 90%;
+    font-size: 14px;
+    
+}
+
+.scroll-text span {
+    padding: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.scroll-text p {
+    font-size: 12px !important;
+    font-weight: bold;
+    
+}
+
+
+
+/*--------- TV--------- */
+
+.tvlist-title {
+    font-size:20px;
+    margin-top: -30px;
+}
+
+
+.tv-list p {
+    font-size: 14px;
+    /* width: 80%; */
+    justify-self: center;
+}
+
+
+.tvlist-into {
+    width: 80%;
+}
+
+.scrolling-wrapper{
+    
+    width: 100% !important;
+    
+}
+
+
+
+.tv-icon {
+    font-size: 20px;
+}
+
+
+
+
+.table-container {
+    width: 100%;
+    /* margin: 20px auto; */
+    flex-wrap: wrap;
+    gap: 10px;
+    /* margin: 0 auto !important; */
+    /* justify-content: center !important; */
+    
+    
+
+
+}
+
+
+table {
+    width: 100%;
+}
+
+
+thead {
+    background-color: #2B2B2B;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+th,
+td {
+    padding: 5px;
+    border-bottom: 1px solid #54595F;
+    font-size: 12px;
+    line-height: 1.2;
+   
+}
+
+
+tbody img {
+    width: 40px;
+}
+
+
+/*--------- Radio --------- */
+
+
+.radio-icon {
+    font-size: 20px;
+}
+
+
+.radio-list p {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.radiolist-title {
+    font-size: 20px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------- SOLUTIONS --------------*/
 
 
 .sol-sat-image {
-    background-image: url(Images/full-length-man-using-mobile-phone.jpg);
+    background-image: url(Images/communication-satellite-floating-space-with-globe-background-transmitting-via-satellite.jpg);
     position: relative;
     background-size: cover;
     /* background-repeat: no-repeat; */
@@ -2186,9 +3050,9 @@ tbody img {
 
 .solutions-text {
     width: 80%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 30px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); */
     /* text-align: left; */
 }
@@ -2221,7 +3085,7 @@ tbody img {
     font-size: 18px;
     color: #54595F;
     line-height: 1.6;
-    margin-bottom: -60px;
+    /* margin-bottom: -60px; */
     text-align: justify;
 }
 
@@ -2233,7 +3097,7 @@ tbody img {
 }
 
 
-.KNET {
+/* .KNET {
     color: #2B2B2B;
     text-align: center;
     margin-left: 700px;
@@ -2241,7 +3105,7 @@ tbody img {
     text-decoration: none;
     color: #551A8B;
 
-}
+} */
 
 
 
@@ -2313,6 +3177,167 @@ tbody img {
     justify-self: center;
     margin-top: 70px;
 }
+
+
+/*-------------- Responsive view for solutions --------------*/
+
+
+@media screen and (max-width: 1180px) {
+    .sol-sat-image, 
+    .sol-overlay {
+        height: 200px;
+        background-size: cover;
+        
+    }
+    .sol-overlay h1 {
+        font-size: 30px;
+     
+     }
+    
+     .sol-overlay p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 1.3
+        ;
+     }
+    
+    
+    h2.solutions-title {
+        font-size: 20px !important;
+        margin-top: -30px !important;
+        width: 100% !important;
+    
+    }
+    
+    
+    .solutions-title-2 {
+        text-align: center;
+        margin-bottom: 5px !important;
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    
+    .solutions-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        /* padding: 50px; */
+        /* gap: 40px; */
+        /* width: 90%; */
+        max-width: 1800px;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    
+    .solutions-text {
+        width: 100%;
+        padding: 0px !important;
+        border-radius: 0px;
+    
+    }
+    
+    
+    .solutions-text h3 {
+        font-size: 20px;
+        margin-top: 20px !important;
+        /* margin: 0 auto !important; */
+        text-align: center;
+        width: 80%;
+    }
+    
+    
+    .solutions-text p {
+        font-size: 12px !important;
+        margin-bottom: 20px !important;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    
+    
+    .solutions-container img {
+        width: 100%;
+        /* height: 700px; */
+        /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    }
+    
+
+
+    .solutions-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* gap: 70px;
+        background-color: #F7941D; */
+        padding: 30px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        gap: 50px;
+    
+    }
+    
+    .uplink,
+    .remote-playout,
+    .mam,
+    .qoe,
+    .contribution {
+        width: 100%;
+        text-align: justify;
+        margin: 0 auto;
+        /* background-color: #ffffff; */
+    
+    }
+    
+    .epg-img, .remote-lady {
+        margin-top: -80px;
+        margin-bottom: 20px;
+        /* width: 300px !important;
+        margin: 0 auto !important; */
+    }
+    
+    
+    .solutions-2 p {
+        color: #2B2B2B;
+        font-size: 16px;
+    }
+    
+    .solutions-2 h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    
+    .couple-tv {
+        width: 70%;
+        display: flex;
+        justify-self: center;
+        margin-top: 70px;
+    }
+
+    
+    .ctu-home:hover {
+        text-decoration: none;
+    }
+    
+    .KNET {
+        color: #2B2B2B;
+        text-align: center;
+        margin-left: 700px;
+        margin-top: -100px;
+        text-decoration: none;
+        color: #551A8B;
+    
+    }
+    
+    
+    
+
+    
+}
+  
 
 
 
@@ -2477,3 +3502,577 @@ tbody img {
 /* .dropdown-content table {
     width: 500px;
 } */
+
+
+
+.WhatsApp-ins {
+    display: flex;
+    background-color: #25D366;
+    width: 300px;
+    /* justify-content: center; */
+    border-radius: 10px;
+    /* margin-top: 50px; */
+    /* margin-left: 20px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    /* position: fixed; */
+    z-index: 9999;
+    margin:  0 auto;
+    top: 50%;
+    left: 50%;
+    /* bottom: 20px; */
+    /* right: 20px; */
+    animation: breathe 3s ease-in-out infinite;
+    margin-top: 20px;
+}
+
+
+.WhatsApp-ins:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+.WhatsApp-ins a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.WhatsApp-ins p {
+    align-self: center;
+    text-align: center;
+    padding-top: 14px;
+    margin-left: 5px;
+
+}
+
+
+.WhatsApp-ins img {
+    width: 50px;
+    margin-left: 35px;
+
+}
+
+
+.ins-text {
+        color: #54595F !important;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        padding-top: 8px;
+        margin-left: -5px;
+        font-size: 16px;
+
+    }
+
+
+/*--------------Responsive for Installers -------------*/
+
+@media screen and (max-width: 1180px) {
+    
+    
+.Home-ctu {
+    text-decoration: underline;
+    color: #F7941D;
+}
+
+
+.ins-sat-image {
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+
+.ins-overlay {
+    height: 200px;
+    width: 100%;
+}
+
+.ins-overlay button{
+    display: flex;
+    font-size: 18px;
+    justify-self: center;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    background-color: #f7941d;
+    border: none;
+    border-radius: 20px;
+    padding-left: 40px;
+    color: #2B2B2B;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.ins-overlay button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.ins-overlay a{
+    text-decoration: none;
+}
+
+
+
+.ins-overlay h1 {
+    font-size: 30px;
+
+}
+
+
+.ins-overlay p {
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 10px;
+    transition: none;
+    width: 100%;
+    line-height: 1.3;
+
+}
+
+
+.ins-home:hover {
+    text-decoration: none;
+}
+
+
+
+/* 
+
+.ins-dropdown {
+    width: 50%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.ins-dropdown tbody {
+    background-color: #d6d2d2;
+}
+
+
+.ins-dropdown p {
+    color: #54595F;
+}
+
+.dropdown-header {
+    background-color: #7A275F;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    color: #54595F;
+
+}
+
+.dropdown-header:hover {
+    background-color: #F7941D;
+    transition: 0.3s ease-in-out;
+}
+
+
+.plus {
+    font-size: 20px;
+} */
+
+/* .dropdown-content table {
+    width: 500px;
+} */
+
+
+
+.WhatsApp-ins {
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+
+.WhatsApp-ins:hover {
+    transform: none;
+    transition: none;
+}
+
+
+.WhatsApp-ins a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.WhatsApp-ins p {
+    align-self: center;
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 5px;
+    font-size: 16px;
+
+}
+
+
+.WhatsApp-ins img {
+    width: 40px;
+    margin-left: 35px;
+
+}
+
+
+.ins-text {
+        color: #54595F !important;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        padding-top: 8px;
+        margin-left: -5px;
+        width: 80%;
+        /* background-color: #F7941D; */
+
+    }
+
+
+}
+
+/*---------------- Index Responsive  ----------------*/
+
+@media (max-width: 1180px) {
+    /* .nav-bar {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    } */
+    .prev,
+    .next {
+        font-size: 1.5em;
+        padding: 3px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+
+    .services,
+    .reach-container,
+    .why-waps-container,
+    .solutions-2,
+    .about-us-container,
+    .contact-container {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #backToTop:hover {
+        background-color: #7A275F;
+    }
+
+    .services,
+    .dth-solution {
+        padding: 10px;
+        margin-top: 10px !important;
+    }
+
+    .services img,
+    .reach-container img,
+    .teleport-img,
+    .couple-tv {
+        width: 90%;
+    }
+
+
+    .services img {
+        max-width: 100%;
+        height: auto;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        box-shadow: none;
+
+    }
+
+    /* .services img{
+        width: 350px !important;
+    } */
+
+   
+    .reach-container img
+     {
+        width: 80%;
+        margin-top: -50px;
+    }
+
+    .overlay-text h1,
+    .why-waps-text h1,
+    .info h1,
+    .reach h2,
+    .dth-solution h2,
+    .about-text h2,
+    .solutions-title,
+    .cov-text h2,
+    .Experience-front-overlay h2 {
+        font-size: 25px !important;
+        width: 80% !important;
+        text-align: center !important;
+        margin: 0 auto;
+    } 
+    
+    
+
+    
+    .why-waps-container p {
+        padding: 50px;
+    } 
+    
+    .why-waps-container  {
+       gap: 0px !important;
+    } 
+
+
+    .overlay-text p,
+    .reach-text,
+    .dth-solution p,
+    .about-text p,
+    .solutions-text p,
+    .cov-text p,
+    .info p {
+        font-size: 16px !important;
+        width: 90% !important;
+        
+    }
+
+    
+    .reach-text
+     {
+        font-size: 16px !important;
+        width: 90% !important;
+        padding: 20px !important;
+        margin-top: -60px;
+        
+    }
+
+
+    .reach-action  {
+        background-color: #7A275F;
+        justify-content: center;
+        border-radius: 20px !important;
+        padding: 5px;
+        width: 150px !important;
+        margin-top: 20px;
+        transition: none;
+        cursor: none;
+        font-size: 12px;
+       
+    }
+    
+    .dth-header {
+        font-size: 25px !important;
+        text-align: center !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        margin-top: 20px !important;
+       
+    }
+    .dth-solution p {
+        margin-top: -40px !important;
+       
+    }
+
+    
+    
+
+
+    .overlay-text p {
+        
+        /* position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    background-color: #7A275F;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px; */
+
+    width: 120px !important;
+    padding: 5px;
+    }
+
+
+
+
+
+
+    .slide {
+        height: 300px;
+    }
+
+     .slider {
+        margin-top: 0px;
+    }
+
+    .wide-reach,
+    .expertise,
+    .Experience {
+        max-width: 90% !important;
+        height: 300px !important;
+    }
+
+    .front, .back,
+    .front-front-overlay,
+    .expertise-front, .expertise-front-overlay,
+    .Experience-front, .Experience-front-overlay {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .info {
+        padding: 20px;
+    }
+
+    /* .info button {
+        width: 200px !important;
+    } */
+
+
+    .solutions {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+ /* .reach-action, */
+ 
+ .view-more button,
+ .ins-overlay button {
+     width: 50% !important;
+ }
+
+ .info button{
+     width: 50% !important;
+     font-size: 12px;
+     padding: 0px;
+ }
+
+
+    /* <!--------------- FOOTER ---------------> */
+
+
+    .footer { 
+        height: auto;
+        padding: 20px;
+        
+    }
+
+
+    .contact-details,
+    .contact-container img {
+        width: 90% !important;
+    }
+
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .contact li {
+        list-style: none;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+
+    .contact a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .contact img {
+        width: 30px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .contact p,
+    .Phone-number,
+    .Email-,
+    .location- {
+        margin: 2px 0;
+        padding: 0;
+        font-size: 12px;
+        /* color: #ffffff; */
+    }
+
+    .contact p {
+        color: #ffffff;
+    }
+
+
+    .contact-us {
+        text-align: center;
+        /* font-weight: bold; */
+        font-size: 16px;
+    }
+
+
+    .copy-right {
+        font-size: 10px;
+        margin-top: 40px;
+    }
+
+
+}
+
+
+
+
+
