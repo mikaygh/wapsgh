@@ -3248,6 +3248,8 @@ tbody img {
         text-align: center;
         width: 80%;
         text-align: center !important;
+        margin: 0 auto !important;
+        color: #0000FF;
     }
     
     
