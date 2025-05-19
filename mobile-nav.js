@@ -1,18 +1,24 @@
-
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
 }
 
-// Close the nav menu when clicking outside
+// nav menu closes  when clicking outside
 document.addEventListener('click', function(event) {
     const navLinks = document.getElementById('navLinks');
     const hamburger = document.querySelector('.hamburger');
 
-    // If nav is open AND click is outside both nav and hamburger
     if (navLinks.classList.contains('active') && 
         !navLinks.contains(event.target) &&
         !hamburger.contains(event.target)) {
+        navLinks.classList.remove('active');
+    }
+});
+
+//  nav menu Closes on scroll
+window.addEventListener('scroll', function () {
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
     }
 });
@@ -22,4 +28,3 @@ function toggleMediaDropdown() {
     const dropdown = document.getElementById('mediaDropdown');
     dropdown.classList.toggle('show');
 }
-
