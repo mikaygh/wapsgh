@@ -188,11 +188,13 @@ html {
     width: 100%;
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
     justify-content: center;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     /* margin-bottom: 20px; */
     z-index: 1000;
     position: fixed;
+    gap: 300px;
 }
 
 
@@ -353,6 +355,7 @@ html {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.5);
     align-content: center;
+    justify-content: center;
     color: white;
     font-size: 40px;
     text-align: center;
@@ -1451,13 +1454,10 @@ p {
     width: 80%;
     border: solid 5px;
     border-color: #7c0e0e;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    /* height: auto; */
-    /* width: 100%;
-    height: 100%; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
     justify-self: center;
-    /* width: 100%;
-    height: 100%; */
+    
 
 }
 
@@ -1640,12 +1640,13 @@ p {
 
 
     .contact-container {
-        display: flex;
-        gap: 40px;
         justify-content: center;
         width: 90%;
         margin: 0 auto;
         margin-bottom: 100px;
+        align-items: center;
+        text-align: center;
+        
     }
 
     .contact-container img {
@@ -1679,31 +1680,16 @@ p {
     }
 
 
-    .map iframe {
-        display: flex;
-        width: 80%;
-        border: solid 5px;
-        border-color: #7c0e0e;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        margin: 0 auto;
-        /* height: auto; */
-        /* width: 100%;
-        height: 100%; */
-        justify-self: center;
-        /* width: 100%;
-        height: 100%; */
-
-    }
 
 
 
-    .contact-icons {
+   .contact-icons {
         list-style: none;
         padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 80px;
+        /* margin-bottom: 80px; */
         /* text-align: center; */
         list-style: none;
         margin-top: -20px;
@@ -1803,8 +1789,16 @@ p {
 
     }
 
-  .ins-text {
-        color: #54595F !important;
+    .ins-text {
+            color: #54595F !important;
+
+        }
+
+        
+    .map iframe {
+        display: flex;
+        width: 80%;
+        margin: 0 auto !important;
 
     }
 
@@ -2260,6 +2254,7 @@ p {
     width: 70%;
     display: flex;
     justify-self: center;
+    margin: 0 auto;
 }
 
 
@@ -2882,10 +2877,11 @@ tbody img {
     font-size: 14px;
     /* width: 80%; */
     justify-self: center;
+    text-align: center;
 }
 
 
-.tvlist-into {
+.tvlist-intro {
     width: 80%;
 }
 
@@ -3246,10 +3242,9 @@ tbody img {
         font-size: 20px;
         margin-top: 20px !important;
         /* margin: 0 auto !important; */
-        text-align: center;
-        width: 80%;
         text-align: center !important;
         margin: 0 auto !important;
+        width: 80%;
     }
     
     
@@ -3564,8 +3559,6 @@ tbody img {
         justify-self: center;
         align-self: center;
         text-align: center;
-        padding-top: 8px;
-        margin-left: -5px;
         font-size: 16px;
 
     }
@@ -3746,9 +3739,8 @@ tbody img {
         justify-self: center;
         align-self: center;
         text-align: center;
-        padding-top: 8px;
-        margin-left: -5px;
         width: 80%;
+        margin: 0 auto;
         /* background-color: #F7941D; */
 
     }
