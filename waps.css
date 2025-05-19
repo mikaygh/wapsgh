@@ -619,11 +619,28 @@ html {
 }
 
 
-.reach a {
-    text-decoration: none;
-    color: #0000ff;
 
+
+.reach a:link {
+    color: #0000FF;
+    text-decoration: none;
 }
+
+.reach a:visited {
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.reach a:active {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.reach a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 .reach-action {
@@ -864,11 +881,32 @@ html {
 
 }
 
-.back a {
+/* .back a {
 
     text-decoration: none;
     color: #0000FF;
+} */
+
+
+.back a:link {
+    color: #0000FF;
+    text-decoration: none;
 }
+
+.back a:visited {
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.back a:active {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
 
 .back a:hover {
 
