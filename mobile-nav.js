@@ -3,7 +3,7 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
-// Close nav menu when clicking outside
+// nav menu closes  when clicking outside
 document.addEventListener('click', function(event) {
     const navLinks = document.getElementById('navLinks');
     const hamburger = document.querySelector('.hamburger');
@@ -15,7 +15,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Close nav menu on scroll
+//  nav menu Closes on scroll
 window.addEventListener('scroll', function () {
     const navLinks = document.getElementById('navLinks');
     if (navLinks.classList.contains('active')) {
@@ -23,25 +23,13 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Close nav menu on orientation change or resize
-window.addEventListener('orientationchange', closeNavOnChange);
-window.addEventListener('resize', closeNavOnChange);
-
-function closeNavOnChange() {
-    const navLinks = document.getElementById('navLinks');
-    if (navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
-    }
-
-    // Also hide the media dropdown if open
-    const dropdown = document.getElementById('mediaDropdown');
-    if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-    }
-}
-
 // Toggle media dropdown
 function toggleMediaDropdown() {
     const dropdown = document.getElementById('mediaDropdown');
     dropdown.classList.toggle('show');
 }
+
+
+
+
+
