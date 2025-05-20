@@ -338,14 +338,27 @@ html {
    
 
 @media screen and (max-width: 1180px) and (orientation: landscape) {
-  .nav-links li a,
-  .media-dropdown a {
+  .nav-links li a {
     font-size: 12px; 
   }
+  .media-dropdown a {
+    font-size: 10px; 
+  }
+  
+
 }
 
-    
-    
+ /* @media screen and (max-width: 1180px) and (orientation: portrait) {
+  .nav-links li a {
+    font-size: 14px; 
+  }
+  .media-dropdown a {
+    font-size: 16px; 
+  }
+  
+
+}   
+     */
 
 
 /* ------------------ Slider ------------------ */
