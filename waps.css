@@ -348,7 +348,7 @@ html {
 
 }
 
- /* @media screen and (max-width: 1180px) and (orientation: portrait) {
+ @media screen and (max-width: 1180px) and (orientation: portrait) {
   .nav-links li a {
     font-size: 14px; 
   }
@@ -358,7 +358,7 @@ html {
   
 
 }   
-     */
+    
 
 
 /* ------------------ Slider ------------------ */
