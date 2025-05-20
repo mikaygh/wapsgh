@@ -373,7 +373,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     align-content: center;
     justify-content: center;
     color: white;
@@ -1407,7 +1407,7 @@ p {
     position: relative;
     background-color: #2B2B2B;
     height: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     align-content: center;
     width: 100%;
 }
@@ -1889,7 +1889,7 @@ p {
     position: relative;
     background-color: #2B2B2B;
     height: 600px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.0);
     align-content: center;
     width: 100%;
 }
@@ -2139,12 +2139,12 @@ p {
 
 
 .abtu-sat-image {
-    background-image: url(Images/excited-young-black-couple-with-remote-control-sitting-couch-watching-tv-against-blue-studio.jpg);
+    background-image: url(Images/wide-angle-shot-white-satellite-dishes-roof-building.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center calc(20% - 40px);
-    height: 600px;
+    background-position: center calc(20% - 80px);
+    height: 700px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -2154,8 +2154,8 @@ p {
 .abtu-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
     align-content: center;
     width: 100%;
 }
@@ -2276,6 +2276,15 @@ p {
     border-left: 3px solid #f7941d;
     padding-left: 20px;
 }
+
+
+.about-text span {
+    font-weight: bold;
+}
+
+/* .value-item {
+    font-weight: bold;
+} */
 
 .about-text a:link {
     color: #0000FF;
@@ -2558,12 +2567,12 @@ p {
 
 
 .tvlist-sat-image {
-    background-image: url(Images/children-holding-remote-while-lying-floor.jpg);
+    background-image: url(Images/excited-young-black-couple-with-remote-control-sitting-couch-watching-tv-against-blue-studio.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center calc(30% - 50px);
-    height: 600px;
+    background-position: center calc(15% - 0px);
+    height: 700px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -2573,8 +2582,8 @@ p {
 .tvlist-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
     align-content: center;
     width: 100%;
 }
@@ -2690,7 +2699,7 @@ p {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    width: 62%;
+    width: 61%;
     box-sizing: border-box;
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -2854,6 +2863,7 @@ tbody img {
     
 .tvlist-sat-image {
     background-size: cover;
+    background-repeat: no-repeat;
     height: 200px;
     margin-bottom: 50px;
 }
@@ -2949,6 +2959,7 @@ tbody img {
     width: 80%;
     text-align: center !important;
     margin: 0 auto;
+    font-size: 14px !important;
 }
 
 .scrolling-wrapper{
@@ -3060,7 +3071,7 @@ tbody img {
     position: relative;
     background-color: #2B2B2B;
     height: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     align-content: center;
     width: 100%;
 }
@@ -3419,8 +3430,9 @@ tbody img {
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center;
-    height: 600px;
+    /* background-position: center; */
+    background-position: center calc(30% - 0px);
+    height: 700px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -3431,8 +3443,8 @@ tbody img {
 .ins-overlay {
     position: relative;
     background-color: #2B2B2B;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
     align-content: center;
     width: 100%;
 }
