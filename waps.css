@@ -2404,10 +2404,10 @@ p {
 .abtu-sat-image {
     height: 200px;
     margin-bottom: 10px;
-    background-position: center calc(20% - 40px);
+    background-position: center calc(50% - 0px);
+    background-repeat: no-repeat;
    
 }
-
 .abtu-overlay {
     height: 200px;
     width: 100%;
