@@ -2143,17 +2143,18 @@ p {
 
 
 .abtu-sat-image {
-    background-image: url(Images/wide-angle-shot-white-satellite-dishes-roof-building.jpg);
+    background-image: url(Images/teleport-4.JPG);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
-    background-position: center calc(20% - 80px);
+    background-position: center calc(50% - 10px);
     height: 700px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     align-items: center;
 }
+
 
 .abtu-overlay {
     position: relative;
