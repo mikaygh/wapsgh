@@ -262,10 +262,6 @@ html {
         transition: color 0.3s ease;
     }
     
-    .nav-links li a:hover {
-        color: #F7941D
-    }
-    
     
     .nav-media {
         color: #ffffff;
