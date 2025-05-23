@@ -11,6 +11,7 @@ PANTONE 144C   #F7941D yellowlike */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
     /* margin-left: 30px;
     margin-right: 30px; */
 
