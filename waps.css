@@ -1181,7 +1181,7 @@ html {
 .info p {
     color: #2B2B2B;
     width: 70%;
-    text-align: left;
+    text-align: center;
     justify-self: center;
     line-height: 1.5;
 }
