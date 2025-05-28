@@ -31,11 +31,11 @@ body {
 
 html {
     overflow-x: hidden;
-    -webkit-text-size-adjust: 100%; /* For Safari and Chrome */
-    -moz-text-size-adjust: 100%;    /* For Firefox */
-    -ms-text-size-adjust: 100%;     /* For Internet Explorer */
-     text-size-adjust: 100%;         /* Standard property */
-}
+    -webkit-text-size-adjust: 100%; 
+    -moz-text-size-adjust: 100%;    
+    -ms-text-size-adjust: 100%;     
+     text-size-adjust: 100%;        
+    }
 
 
 /* @media screen and (min-resolution: 150dpi) { */
@@ -49,16 +49,6 @@ html {
 /*--------------NAVIGATION--------------*/
 
 
-
-/* .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    height: 100px;
-    position: fixed;
-} */
 
 .nav-buttons a {
     text-decoration: none;
@@ -263,6 +253,7 @@ html {
     }
     
     
+    
     .nav-media {
         color: #ffffff;
     }
@@ -327,15 +318,26 @@ html {
         list-style: none;
       }
       
-      .nav-links.active {
+    .nav-links.active {
         max-height: 500px; 
         padding: 20px;
       }
 
-      .nav-links li {
+    .nav-links li {
         margin: 20px 0;
       }
+.nav-links li a.clicked {
+  color: #F7941D !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle bg highlight if needed */
+  transition: color 0.2s ease-in-out;
+}
 
+.nav-links li a:focus,
+.nav-links li a:active {
+  color: #F7941D !important;
+  outline: none;
+}
     
 }
   
@@ -343,7 +345,7 @@ html {
 
 /* @media screen and (max-width: 1180px) and (orientation: landscape) {
   .nav-links li a {
-    font-size: 12px; 
+    font-size: 14px; 
   }
   .media-dropdown a {
     font-size: 10px; 
@@ -354,7 +356,7 @@ html {
 
  @media screen and (max-width: 1180px) and (orientation: portrait) {
   .nav-links li a {
-    font-size: 14px; 
+    font-size: 16px; 
   }
   .media-dropdown a {
     font-size: 16px; 
@@ -479,6 +481,8 @@ html {
 
 
 
+
+
 .prev,
 .next {
     position: absolute;
@@ -551,7 +555,7 @@ html {
 
 .dth-solution p {
     color: #54595F;
-    text-align: justify;
+    text-align: left;
     width: 70%;
     font-size: 20px;
     margin: 0 auto;
@@ -590,7 +594,7 @@ html {
 
 .reach-text {
     color: #2B2B2B;
-    text-align: justify;
+    text-align: left;
     width: 60%;
     /* max-width: 500px; */
     font-size: 18px;
@@ -806,7 +810,7 @@ html {
 .back p {
     position: absolute;
     color: #2B2B2B;
-    /* text-align: center; */
+    text-align: left;
     font-size: 18px;
     /* bottom: 50%;
     margin: 0 auto; */
@@ -896,7 +900,7 @@ html {
 .back p {
     position: absolute;
     color: #2B2B2B;
-    text-align: justify;
+    text-align: left;
     font-size: 14px;
     padding: 30px;
     /* bottom: 50%;
@@ -1034,7 +1038,7 @@ html {
     align-items: center;
     justify-self: center;
     width: 400px;
-    text-align: justify;
+    text-align: left;
 
 
 }
@@ -1136,7 +1140,7 @@ html {
 .Experience-back p {
     position: absolute;
     color: #2B2B2B;
-    text-align: justify;
+    text-align: left;
     font-size: 14px;
     padding: 30px;
     margin: 0 auto;
@@ -1177,7 +1181,7 @@ html {
 .info p {
     color: #2B2B2B;
     width: 70%;
-    text-align: justify;
+    text-align: left;
     justify-self: center;
     line-height: 1.5;
 }
@@ -1962,7 +1966,7 @@ p {
 }
 
 .cov-text p {
-    text-align: justify;
+    text-align: left;
     color: #54595F;
     font-size: 18px;
     width: 60%;
@@ -2155,7 +2159,6 @@ p {
     align-items: center;
 }
 
-
 .abtu-overlay {
     position: relative;
     background-color: #2B2B2B;
@@ -2272,7 +2275,7 @@ p {
     line-height: 1.8;
     margin-bottom: 20px;
     color: #54595F !important;
-    text-align: justify !important;
+    text-align: left !important;
     width: 70% !important;
     
 }
@@ -2408,6 +2411,7 @@ p {
     background-repeat: no-repeat;
    
 }
+
 .abtu-overlay {
     height: 200px;
     width: 100%;
@@ -3166,7 +3170,7 @@ tbody img {
     color: #54595F;
     line-height: 1.6;
     /* margin-bottom: -60px; */
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -3231,7 +3235,7 @@ tbody img {
 .qoe,
 .contribution {
     width: 40%;
-    text-align: justify;
+    text-align: left;
     margin: 0 auto;
     /* background-color: #ffffff; */
 
@@ -3248,6 +3252,7 @@ tbody img {
 .solutions-2 h2 {
     text-align: center;
     font-size: 18px;
+    text-align: left;
 }
 
 
@@ -3432,7 +3437,7 @@ tbody img {
 
 
 .ins-sat-image {
-    background-image: url(Images/Professional-installer.png);
+    background-image: url(Images/Professional-installer.jpg);
     /* background: linear-gradient(to right,#2B2B2B, #F7941D);  */
     position: relative;
     background-size: cover;
