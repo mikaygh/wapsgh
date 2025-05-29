@@ -1152,6 +1152,7 @@ html {
     text-align: center;
     justify-self: center;
     line-height: 1.5;
+    margin: 0 auto;
     
 }
 
@@ -3917,10 +3918,17 @@ tbody img {
     .dth-solution p,
     .about-text p,
     .solutions-text p,
-    .cov-text p,
+    .cov-text p
+            {
+        font-size: 16px !important;
+        width: 90% !important;
+        
+    }
     .info p {
         font-size: 16px !important;
         width: 90% !important;
+        text-align: center;
+        margin: 0 auto;
         
     }
 
