@@ -326,45 +326,13 @@ html {
     .nav-links li {
         margin: 20px 0;
       }
-.nav-links li a.clicked {
-  color: #F7941D !important;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.05); /* subtle bg highlight if needed */
-  transition: color 0.2s ease-in-out;
-}
 
-.nav-links li a:focus,
-.nav-links li a:active {
-  color: #F7941D !important;
-  outline: none;
-}
     
 }
   
    
 
-/* @media screen and (max-width: 1180px) and (orientation: landscape) {
-  .nav-links li a {
-    font-size: 14px; 
-  }
-  .media-dropdown a {
-    font-size: 10px; 
-  }
-  
 
-}
-
- @media screen and (max-width: 1180px) and (orientation: portrait) {
-  .nav-links li a {
-    font-size: 16px; 
-  }
-  .media-dropdown a {
-    font-size: 16px; 
-  }
-  
-
-}    */
-    
 
 
 /* ------------------ Slider ------------------ */
@@ -1181,9 +1149,10 @@ html {
 .info p {
     color: #2B2B2B;
     width: 70%;
-    text-align: left;
+    text-align: center;
     justify-self: center;
     line-height: 1.5;
+    
 }
 
 
@@ -2490,7 +2459,7 @@ p {
     line-height: 1.8;
     margin-bottom: 20px;
     color: #54595F !important;
-    text-align: justify !important;
+    text-align: left !important;
     width: 70% !important;
     
 }
@@ -3339,7 +3308,7 @@ tbody img {
     .solutions-text p {
         font-size: 12px !important;
         margin-bottom: 20px !important;
-        text-align: justify;
+        text-align: left;
         margin: 0 auto;
     }
     
@@ -3371,7 +3340,7 @@ tbody img {
     .qoe,
     .contribution {
         width: 100%;
-        text-align: justify;
+        text-align: left;
         margin: 0 auto;
         /* background-color: #ffffff; */
     
