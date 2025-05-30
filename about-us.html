@@ -21,6 +21,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="mobile-nav.js"></script>
+    <script src="content-transition.js"></script>
 
     </head>
 
@@ -96,52 +97,50 @@
 
     <div class="about-us-container">
 
-     
-
         <div class="about-text">
-            <h2>About WAPS</h2>
-            <p>West Africa Platform Services (WAPS), a wholly owned subsidiary of <a href="https://www.knetgh.com/"
+            <h2 class="fade-in-section">About WAPS</h2>
+            <p class="fade-in-section">West Africa Platform Services (WAPS), a wholly owned subsidiary of <a href="https://www.knetgh.com/"
             target="_blank">K-NET</a> was established in 2014. The initiative aims to deliver high-quality free-to-air (FTA) and free-to-view (FTV) channels to millions of viewers in the region, leveraging K-NET's state-of-the-art teleport facilities and expertise.
             </p>
             <br>
-            <img class="teleport-img" src="Images/teleport-dish-1.jpg">
+            <img class="teleport-img fade-scale" src="Images/teleport-dish-1.jpg">
             <!-- <hr class="rule"> -->
              <br>
-            <h2>Our Mission</h2>
-            <p>We combine our operational excellence and ground-breaking innovation in the areas of audiovisual and
+            <h2 class="fade-in-section">Our Mission</h2>
+            <p class="fade-in-section">We combine our operational excellence and ground-breaking innovation in the areas of audiovisual and
                 content delivery to provide the best experience for content creators and consumers.
             </p>
             <br>
-            <hr class="rule">
+            <hr class="rule fade-scale">
             <br>
-            <h2>Our Vision</h2>
-            <p>We make a difference in the lives of people through the provisioning of access to entertainment and
+            <h2 class="fade-in-section">Our Vision</h2>
+            <p class="fade-in-section">We make a difference in the lives of people through the provisioning of access to entertainment and
                 educational content.
             </p>
             <br>
             <!-- <hr class="rule"> -->
-            <img class="teleport-img" src="Images/close-up-smiley-woman-holding-remote.jpg">
+            <img class="teleport-img fade-scale" src="Images/close-up-smiley-woman-holding-remote.jpg">
             <br>
-            <h2>Our Values</h2>
-            <p class="values"><!--alternatively, put html entity for bullet: &#9679; here  --> <span>Excellence</span>
+            <h2 class="fade-in-section">Our Values</h2>
+            <p class="values fade-in-section"><!--alternatively, put html entity for bullet: &#9679; here  --> <span>Excellence</span>
                 <br>
                 We strive for the highest standards in content delivery and
                 operational efficiency to provide outstanding experiences.
             </p>
             <br>
-            <p class="values"> <span>Innovation</span>
+            <p class="values fade-in-section"> <span>Innovation</span>
                 <br>
                 We embrace creativity and cutting-edge technology to revolutionize
                 audiovisual and content distribution.
             </p>
             <br>
-            <p class="values"> <span>Accessibility</span>
+            <p class="values fade-in-section"> <span>Accessibility</span>
                 <br>
                 We are committed to making entertainment and educational content
                 available to all, enhancing lives through seamless access.
             </p>
             <br>
-            <p class="values"><span>Integrity</span> 
+            <p class="values fade-in-section"><span>Integrity</span> 
                 <br>
                 We uphold transparency, honesty, and ethical standards in all our
                 operations and partnerships.
@@ -162,7 +161,7 @@
     </div>
 
 
-    <div class="know-more">
+  <div class="know-more fade-in-section">
 
         <div class="solutions">
             <a href="solutions.html"> 
@@ -194,6 +193,7 @@
 
     </div>
 
+  
 
 
 
@@ -223,7 +223,9 @@
 
 
     <!---------------------------- FOOTER -------------------------->
-    <footer id="footer" class="footer">
+    <div class="footer-wrapper">
+        
+    <footer id="footer" class="footer fade-in-section">
         <p class="contact-us">Contact Us </p>
         <ul class="contact">
             <li><a href="tel:+233241334664"> <img src="Images/call-outline.svg" alt="Call">
