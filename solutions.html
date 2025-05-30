@@ -26,6 +26,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="mobile-nav.js"></script>
+    <script src="content-transition.js"></script>
 </head>
 
 <body>
@@ -96,14 +97,17 @@
     </div>
 
     <!---------------- SOLUTIONS ---------------->
-    <h2 class="solutions-title">Broadcast Solutions and Services</h2>
-    <h3 class="solutions-title-2">Comprehensive, Seamless Content Delivery</h3>
+    
+
+    
+    <h2 class="solutions-title fade-in-section">Broadcast Solutions and Services</h2>
+    <h3 class="solutions-title-2 fade-in-section">Comprehensive, Seamless Content Delivery</h3>
     <div class="solutions-container">
 
 
         <div class="solutions-text">
 
-            <p>In today's fast-evolving media landscape, satellite broadcast services are vital for delivering
+            <p class="fade-in-section">In today's fast-evolving media landscape, satellite broadcast services are vital for delivering
                 high-quality content to audiences worldwide.
                 Our company provides a fully managed Direct-to-Home (DTH) headend infrastructure, ensuring seamless
                 content distribution across West and Central African markets.
@@ -116,18 +120,20 @@
                 playout. Once prepared, the signal is uplinked to the ASTRA 2F satellite for wide-area distribution.
                 Finally, the transmitted signal reaches DTH households, ensuring seamless content delivery to viewers.
                 <br> <br>
-                <img src="Images/dth-flow-1.png">
+                <img class="fade-scale" src="Images/dth-flow-1.png">
+            </p>
                 <br> <br>
+            <p class="fade-in-section">
                 Designed to support a diverse range of programming—including live events, news, sports, and
                 entertainment our advanced DTH headend infrastructure offers unmatched reliability and efficiency.
                 Backed by a state-of-the-art facility and a team of skilled engineers and technicians, we provide
                 broadcasters and content providers with a cost-effective and scalable media distribution solution.
                 <br>
                 Beyond content distribution, we also offer remote playout service and Media Asset Management System.
-            </p>
+            </p>     
             <br>
-            <h3>Free-To-Air Electronic Programme Guide</h3>
-            <p>
+            <h3 class="fade-in-section">Free-To-Air Electronic Programme Guide</h3>
+            <p class="fade-in-section">
                 Our complimentary Electronic Programme Guide (EPG) for Free-to-Air (FTA) broadcasting plays a vital role
                 in enhancing your channel's visibility, improving audience engagement, and increasing advertiser
                 interest. EPGs serve as digital on-screen guides that provide viewers with program schedules,
@@ -137,10 +143,10 @@
                 channel a competitive edge. It also increases advertiser confidence by providing clear audience metrics,
                 making the channel more attractive, accessible, and commercially viable for long-term success.
             </p>
-            <br><br> <br><br>
-            <img class="epg-img" src="Images/Screenshot-epg.png">
-            <h3>Free-To-Air Logical Channel Numbering System</h3>
-            <p>
+            <br><br><br>
+            <img class="epg-img fade-scale" src="Images/Screenshot-epg.jpg">
+            <h3 class="fade-in-section">Free-To-Air Logical Channel Numbering System</h3>
+            <p class="fade-in-section">
                 Our complimentary Free-To-Air (FTA) Logical Channel Numbering (LCN) system enhances viewer experience by
                 organizing channels in a clear, structured manner, making it easier for audiences to find and access
                 their favorite content. By assigning logical numbers to different types of channels, such as news,
@@ -148,37 +154,21 @@
                 and devices. This improves audience retention and engagement, as viewers are less likely to switch away
                 due to frustration from disorganized channel listings.
             </p>
-            <br><br> <br><br>
-            <img class="remote-lady" src="Images/medium-shot-woman-holding-remote.jpg">
+            <br><br><br>
+            <img class="remote-lady fade-scale" src="Images/medium-shot-woman-holding-remote.jpg">
 
         </div>
 
-        <!-- <img src="Images/teleport-2.JPG">  -->
+       
     </div>
 
-    <!-- <a class="KNET" href="https://www.knetgh.com/" target="_blank"><p class="KNET">K-NET Teleport</p></a>  -->
-
-    <div class="dth-offer">
-
-        <!-- <h3>The DTH Service Offering</h3> -->
-
-
-        <!-- <p>
-        Step 1: Contribution via possible contribution means (IP, microwave or fibre)
-        <br>
-        Step 2: Reception of the signal and treatment of the signal (re-Encoding, MUX, Modulation, Encryption, as options) and various other DVB services (Content Management, Playout, etc.)
-        <br>
-        Step 3: Uplink to ASTRA 2F
-        <br>
-        Step 4: Transmissions of the signal to DTH households 
-
-    </p> -->
+  
     </div>
 
 
 
 
-    <div class="solutions-2">
+    <div class="solutions-2 fade-in-section">
 
 
 
@@ -246,10 +236,6 @@
     </div>
 
 
-
-    <!-- <img class="couple-tv" src="Images/medium-shot-smiley-couple-couch.jpg"> -->
-
-
     <!-- Back to Top Button -->
     <button id="backToTop" onclick="scrollToTop()">&uarr;</button>
 
@@ -278,7 +264,11 @@
 
 
     <!---------------------------- FOOTER -------------------------->
-    <footer id="footer" class="footer">
+
+
+    <div class="footer-wrapper">
+
+    <footer id="footer" class="footer fade-in-section">
         <p class="contact-us">Contact Us </p>
         <ul class="contact">
             <li><a href="tel:+233241334664"> <img src="Images/call-outline.svg" alt="Call">
@@ -305,6 +295,14 @@
 
         <p class="copy-right"> © 2025 wapsgh. All Rights Reserved.</p>
     </footer>
+
+
+    </div>
+
+    
+
+
+
 </body>
 
 </html>
