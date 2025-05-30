@@ -31,6 +31,7 @@ body {
 
 html {
     overflow-x: hidden;
+    overflow-y: auto;
     -webkit-text-size-adjust: 100%; 
     -moz-text-size-adjust: 100%;    
     -ms-text-size-adjust: 100%;     
@@ -45,6 +46,40 @@ html {
     } */
 /* Other specific adjustments */
 /* } */
+
+
+
+/*--------------TRANSITIONS--------------*/
+
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(100px);
+  visibility: hidden;
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-scale {
+  opacity: 0;
+  transform: scale(0.2);
+  visibility: hidden;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+
+
+
 
 /*--------------NAVIGATION--------------*/
 
@@ -479,6 +514,11 @@ html {
 
 /*--------------SERVICES--------------*/
 
+
+
+
+
+
 .services {
     margin-top: 100px;
     height: 100%;
@@ -503,7 +543,7 @@ html {
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: -70px;
+    margin-bottom: -100px;
     width: 100%;
     /* font-weight: bold; */
 }
@@ -1149,7 +1189,7 @@ html {
 .info p {
     color: #2B2B2B;
     width: 70%;
-    text-align: center;
+    text-align: left;
     justify-self: center;
     line-height: 1.5;
     margin: 0 auto;
@@ -1201,6 +1241,7 @@ html {
     display: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
+    z-index: 3000;
 }
 
 
@@ -1219,12 +1260,14 @@ html {
     margin-bottom: 40px;
     text-align: center;
     list-style: none;
+    margin: 0 auto;
 }
 
 
 .contact li {
     text-align: center;
     width: 200px;
+    overflow: hidden;
 }
 
 
@@ -1280,11 +1323,8 @@ p {
     margin: auto;
     margin-top: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    margin-left: auto;
-    margin-right: auto;
-    /* position: relative;
-    top: 0;
-    bottom: 0; */
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 
@@ -1355,6 +1395,9 @@ p {
 }
 
 
+.footer-wrapper {
+  overflow: hidden;
+}
 
 
 
@@ -2238,6 +2281,7 @@ p {
 
 .about-text {
     width: 80%;
+    margin-top: -80px;
 }
 
 .about-text p {
@@ -2453,6 +2497,7 @@ p {
 
 .about-text {
     width: 90%;
+    margin-top: -20px;
 }
 
 .about-text p {
@@ -4029,7 +4074,7 @@ tbody img {
 
     .info {
         padding: 20px;
-        text-align: center !important;
+        
     }
 
     /* .info button {
