@@ -78,6 +78,13 @@ html {
 }
 
 
+.slide-in-up {
+    transform: translateY(40px);
+}
+
+.slide-in-up.visible {
+    transform: translateY(0);
+}
 
 
 
@@ -2277,10 +2284,11 @@ p {
     /* padding-bottom: 5px; */
     justify-content: center;
     margin: 0 auto;
+    
 }
 
 .about-text {
-    width: 80%;
+    width: 70%;
     margin-top: -80px;
 }
 
@@ -3123,13 +3131,15 @@ tbody img {
 
 .solutions-title {
     font-size: 40px;
-    text-align: center;
+    margin-bottom: -50px;
+    margin-top: -50px;
+    text-align: left;
 }
 
 
 .solutions-title-2 {
-    text-align: center;
-    margin-bottom: -50px;
+    text-align: left;
+    margin-bottom: 20px;
     font-size: 20px;
 }
 
@@ -3160,7 +3170,7 @@ tbody img {
 .solutions-text h3 {
     font-size: 20px;
     margin-top: 50px;
-    justify-self: center;
+    /* justify-self: center; */
 }
 
 
@@ -3303,19 +3313,21 @@ tbody img {
     
     
     h2.solutions-title {
-        font-size: 20px !important;
+        font-size: 25px !important;
         margin-top: -30px !important;
-        width: 100% !important;
+        margin-bottom: -20px;
+        width: 80% !important;
+        text-align: left;
+        
     
     }
     
     
     .solutions-title-2 {
-        text-align: center;
-        margin-bottom: 5px !important;
-        font-size: 16px;
-        width: 80%;
-        margin: 0 auto;
+        text-align: left;
+        /* margin-bottom: 5px !important; */
+        font-size: 16px !important;
+        width: 80% !important;
     }
     
     
@@ -3334,7 +3346,7 @@ tbody img {
     
     
     .solutions-text {
-        width: 100%;
+        width: 90%;
         padding: 0px !important;
         border-radius: 0px;
     
@@ -3344,10 +3356,10 @@ tbody img {
     .solutions-text h3 {
         font-size: 20px;
         margin-top: 20px !important;
+        margin-left: 0px !important;
+        text-align: left !important;
         /* margin: 0 auto !important; */
-        text-align: center !important;
-        margin: 0 auto !important;
-        width: 80%;
+        width: 100%;
     }
     
     
@@ -3355,7 +3367,7 @@ tbody img {
         font-size: 12px !important;
         margin-bottom: 20px !important;
         text-align: left;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     
     
@@ -3386,7 +3398,7 @@ tbody img {
     .qoe,
     .contribution {
         width: 100%;
-        text-align: left;
+        text-align: left !important;
         margin: 0 auto;
         /* background-color: #ffffff; */
     
@@ -3406,7 +3418,7 @@ tbody img {
     }
     
     .solutions-2 h2 {
-        text-align: center;
+        text-align: left;
         font-size: 18px;
     }
     
@@ -3937,7 +3949,6 @@ tbody img {
     .reach h2,
     .dth-solution h2,
     .about-text h2,
-    .solutions-title,
     .cov-text h2,
     .Experience-front-overlay h2 {
         font-size: 25px !important;
