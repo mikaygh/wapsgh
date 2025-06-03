@@ -4193,6 +4193,10 @@ tbody img {
         margin-top: 40px;
     }
 
+  .social-media img:hover {
+    transform: none;
+    transition: none;
+}
 
 }
 
