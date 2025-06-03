@@ -164,6 +164,13 @@ html {
 }
 
 
+nav ul li a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -184,7 +191,7 @@ html {
 
 
 .dropdown-arrow {
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 5px;
     cursor: pointer;
     vertical-align: 2px;
@@ -259,7 +266,7 @@ html {
 }
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     .mobile-nav {
         display: block; /* ------ Show Mobile Navbar on Mobile ------ */
         margin-bottom: 80px;
@@ -375,6 +382,23 @@ html {
   
    
 
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1300px)  {
+  .nav-buttons {
+    gap: 20px;
+    /* font-size: 16px; */
+
+}
+
+  .nav-bar {
+    gap: 100px;
+}
+
+}
 
 
 
@@ -1675,7 +1699,7 @@ p {
 /*--------------Responsive Contact Us--------------*/
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
 
     .Home-ctu {
         text-decoration: none;
@@ -2046,7 +2070,7 @@ p {
 
 /*--------------Responsive for Our coverage -------------*/
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     
 
     .cov-sat-image {
@@ -2413,7 +2437,7 @@ p {
 
 /*--------------Responsive About Us--------------*/
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     
 
 .abtu-sat-image {
@@ -2881,7 +2905,7 @@ tbody img {
 
 /*-------------- Responsive view Channel list --------------*/
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     
 .tvlist-sat-image {
     background-size: cover;
@@ -3281,7 +3305,7 @@ tbody img {
 /*-------------- Responsive view for solutions --------------*/
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     .sol-sat-image, 
     .sol-overlay {
         height: 200px;
@@ -3670,7 +3694,7 @@ tbody img {
 
 /*--------------Responsive for Installers -------------*/
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1024px) {
     
     
 .Home-ctu {
@@ -3853,7 +3877,7 @@ tbody img {
 
 /*---------------- Index Responsive  ----------------*/
 
-@media (max-width: 1180px) {
+@media (max-width: 1024px) {
     /* .nav-bar {
         flex-direction: column;
         gap: 10px;
@@ -4023,21 +4047,6 @@ tbody img {
 
 
     .overlay-text p {
-        
-        /* position: relative;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    background-color: #7A275F;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    padding: 10px;
-    transition: 0.3s ease;
-    cursor: pointer;
-    margin-top: 10px; */
-
     width: 120px !important;
     padding: 5px;
     }
@@ -4099,6 +4108,15 @@ tbody img {
      padding: 0px;
  }
 
+
+
+
+
+
+
+
+
+ 
 
     /* <!--------------- FOOTER ---------------> */
 
@@ -4203,7 +4221,40 @@ tbody img {
 
 }
 
+/*---------- WHY WAPS responsive for tab-mid-window ----------*/
+
+@media (min-width: 1025px) and (max-width: 1300px)  {
+  
+    .wide-reach,
+    .expertise,
+    .Experience {
+        max-width: 90% !important;
+        height: 300px !important;
+        gap: 5px;
+    }
+
+    .front, .back,
+    .front-front-overlay,
+    .expertise-front, .expertise-front-overlay,
+    .Experience-front, .Experience-front-overlay {
+        width: 100% !important;
+        height: 300px !important;
+    }
 
 
+    .back p,
+    .expertise-back p,
+    .Experience-back p {
+        font-size: 10px !important;
+        
+    }
 
+.why-waps-container {
+    gap: 10px;
+   
+   
+
+
+}
+}
 
