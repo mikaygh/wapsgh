@@ -1813,7 +1813,6 @@ p {
 
 
     .contact-icons img:hover {
-        width: 0px;
         transition: none;
         transform: none;
     }
@@ -4165,6 +4164,7 @@ tbody img {
         height: auto;
         margin-bottom: 5px;
     }
+   
 
     .contact p,
     .Phone-number,
@@ -4192,11 +4192,26 @@ tbody img {
         font-size: 10px;
         margin-top: 40px;
     }
-
-  .social-media img:hover {
-    transform: none;
-    transition: none;
+   .social-media img:hover {
+    transform: none !important;
+    transition: none !important;
 }
+
+
+
+    .footer .contact li img {
+        width: 30px;
+        height: auto;
+        max-width: 100%;
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .footer .contact li img:hover {
+        transform: none !important;
+        transition: none !important;
+    }
+
 
 }
 
