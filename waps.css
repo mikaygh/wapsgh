@@ -2782,6 +2782,7 @@ p {
     /* Ensures text disappears behind "New Channels" */
     /* color: #F7941D; */
     position: relative;
+    font-weight: bold;
 }
 
 .scroll-text p {
