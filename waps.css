@@ -1210,7 +1210,7 @@ nav ul li a {
 
 
 
-.info h1 {
+.info h2 {
     color: #2B2B2B;
     width: 70%;
     justify-self: center;
@@ -3956,8 +3956,8 @@ tbody img {
     }
 
     .overlay-text h1,
-    .why-waps-text h1,
-    .info h1,
+    .why-waps-text h2,
+    .info h2,
     .reach h2,
     .dth-solution h2,
     .about-text h2,
