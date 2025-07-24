@@ -32,24 +32,29 @@
     <script src="content-transition.js"></script>
 
 
-    <script type="application/ld+json">
+   <script type="application/ld+json">
     {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"WAPS Channel Line-up",
-    "url":"https://wapsgh.com/channel-list",
-    "description":"List of TV and radio channels in Ghana and West Africa available via WAPS .",
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "ItemList",
+        "name": "WAPS Channel Line-up",
+        "url": "https://wapsgh.com/channel-list",
+        "description": "List of TV and radio channels in Ghana and West Africa available via WAPS."
+        },
+        {
+        "@type": "Organization",
+        "name": "WAPS",
+        "url": "https://wapsgh.com",
+        "logo": "https://wapsgh.com/Images/WAPS-logo-1.png"
+        },
+        {
+        "@type": "WebSite",
+        "name": "WAPS Satellite Broadcasting",
+        "url": "https://wapsgh.com"
+        }
+    ]
     }
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4TGT3CPHB"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-R4TGT3CPHB');
     </script>
 
 </head>
