@@ -35,18 +35,33 @@
     <script src="content-transition.js"> </script>
 
 
-    <script type="application/ld+json">
+     <script type="application/ld+json">
     {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"WAPS | Broadcast and More",
-    "description":"WAPS, A leader in Direct-To-Home (DTH) platform services delivery in Ghana and West Africa offers satellite broadcasting and DTH services to homes across Ghana and West Africa.",
-    "url":"https://wapsgh.com/",
-    "publisher":{
-        "@type":"Organization",
-        "name":"WAPS",
-        "url":"https://wapsgh.com"
-    }
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "Organization",
+        "name": "WAPS",
+        "url": "https://wapsgh.com",
+        "logo": "https://wapsgh.com/Images/logo.png"
+        },
+        {
+        "@type": "WebSite",
+        "name": "WAPS Satellite Broadcasting",
+        "url": "https://wapsgh.com"
+        },
+        {
+        "@type": "WebPage",
+        "name": "WAPS | Broadcast and More",
+        "url": "https://wapsgh.com/",
+        "description": "WAPS, a leader in Direct-To-Home (DTH) platform services delivery in Ghana and West Africa, offers satellite broadcasting and DTH services to homes across Ghana and West Africa.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "WAPS",
+            "url": "https://wapsgh.com"
+        }
+        }
+    ]
     }
     </script>
 
